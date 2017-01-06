@@ -38,12 +38,12 @@ document.addEventListener('DOMContentLoaded', function() {
             if(isLoggedValue){
                 logOut().then(function(){
                     console.log('log out is done so can now call sign in.');
-                    signIn('adrian.dornan@live.ie', 'nitrocloud');
+                    signIn('*******', '*******');
                 })
             }
             else{
                 console.log('not logged in so can safely sign in');
-                signIn('adrian.dornan@live.ie', 'nitrocloud');
+                signIn('*****', '*****');
             }
         })
 
