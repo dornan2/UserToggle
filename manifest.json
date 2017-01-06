@@ -1,0 +1,32 @@
+{
+    "manifest_version": 2,
+    "name": "Nitro User Toggle",
+    "description": "This extension allows you to easily switch between users in Nitro Cloud",
+    "version": "1.2",
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "https://ajax.googleapis.com/",
+        "http://*/",
+        "https://*/"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://sso.gonitro.com/*"
+            ],
+            "js": [
+                "jquery-3.1.1.min.js",
+                "content.js"
+            ]
+        }
+    ]
+}
