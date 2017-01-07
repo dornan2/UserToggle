@@ -6,9 +6,6 @@ chrome.tabs.getSelected(null, function(tab) {
 
  });
 
-
-
-
  // chrome.tabs.query({
  //     "currentWindow": true,//Filters tabs in current window
  //     "status": "complete", //The Page is completely loaded
@@ -21,9 +18,6 @@ chrome.tabs.getSelected(null, function(tab) {
  //         $loader.hide();
  //     }
  // });
-
-
-
 
 document.addEventListener('DOMContentLoaded', function() {
 

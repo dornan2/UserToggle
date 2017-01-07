@@ -14,8 +14,6 @@ chrome.runtime.onMessage.addListener(function(credentials, sender, sendResponse)
 
 function logOut() {
     console.log('Inside logOut() about to press log-out button');
-
-
     document.getElementsByClassName('E2E-logout-btn')[0].click();
 }
 
